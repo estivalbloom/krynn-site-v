@@ -34,13 +34,13 @@ const goToNext = () => emblaApi.value?.scrollNext();
 				class="embla__button embla__button--prev"
 				@click="goToPrev"
 			>
-				🡄
+				<vue-feather type="chevron-left"></vue-feather>
 			</button>
 			<button
 				class="embla__button embla__button--next"
 				@click="goToNext"
 			>
-				🡆
+				<vue-feather type="chevron-right"></vue-feather>
 			</button>
 		</div>
 	</div>
@@ -51,10 +51,6 @@ const goToNext = () => emblaApi.value?.scrollNext();
 	display: flex;
 	justify-content: center;
 	gap: 8px;
-}
-
-.button-drawer button {
-	border: 2px solid var(--text);
 }
 
 .slide img {
