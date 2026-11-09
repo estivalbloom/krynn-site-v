@@ -7,7 +7,7 @@ jobs:
         runs-on: ubuntu-22.04
         strategy:
             matrix:
-                node-version: [27]
+                node-version: [26]
         steps:
             - name: Checkout 🛎️
               uses: actions/checkout@v4
