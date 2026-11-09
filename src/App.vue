@@ -47,6 +47,7 @@ section {
 .hero-img {
 	border-radius: 1000px;
 	border: 6px solid palevioletred;
+	width: 256px;
 }
 
 footer {

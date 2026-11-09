@@ -21,7 +21,7 @@ const goToNext = () => emblaApi.value?.scrollNext();
 		>
 			<div class="embla__container">
 				<div
-					class="embla__slide"
+					class="embla__slide slide"
 					v-for="path in art"
 				>
 					<img :src="path" />
@@ -55,5 +55,11 @@ const goToNext = () => emblaApi.value?.scrollNext();
 
 .button-drawer button {
 	border: 2px solid var(--text);
+}
+
+.slide img {
+	@media (max-width: 512px) {
+		width: 256px;
+	}
 }
 </style>
