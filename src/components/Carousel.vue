@@ -7,6 +7,7 @@ import art3 from '../assets/art/art3.png';
 const art = [art1, art2, art3];
 
 const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false });
+emblaRef;
 
 const goToPrev = () => emblaApi.value?.scrollPrev();
 const goToNext = () => emblaApi.value?.scrollNext();
